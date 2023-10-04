@@ -5,17 +5,6 @@
 // envoyer les infos en les attribuant à un nouvel id d'article, ou en écrasant un article existant
 
 
-
-
-
-
-// non fonctionnel - à finaliser
-
-
-
-
-
-
 const articleForm = document.getElementById("articleForm");
 const addArticleButton = document.getElementById("addArticle");
 
