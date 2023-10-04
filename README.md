@@ -43,20 +43,17 @@ Postman est un outil qui permet de tester des requêtes HTTP. Vous pouvez créer
 
 ### Étapes Détaillées
 1. **Configuration de Postman**
-   - Ouvrez Postman et créez un nouveau "Request" en cliquant sur le bouton "New" puis "Request".
+   - Ouvrez Postman et créez un nouveau workspace puis un nouveau "Request" en cliquant sur le bouton "New" puis "HTTP".
    - Donnez un nom à votre requête et cliquez sur "Save to My Workspace".
 
 2. **Ajouter un Article**
    - Sélectionnez "POST" comme méthode de requête dans le menu déroulant.
-   - Entrez l'URL de votre API pour ajouter un article : `http://localhost:1337/articles`.
+   - Entrez l'URL de votre API pour ajouter un article : `http://localhost:1337/api/articles`.
    - Allez dans l'onglet "Body".
    - Sélectionnez "raw" et "JSON (application/json)".
    - Ajoutez les données de l'article à envoyer en JSON, par exemple :
      ```json
-     {
-       "title": "My New Article",
-       "content": "This is the content of the new article."
-     }
+     {"data":{"title":"aaa"}}
      ```
    - Cliquez sur "Send".
    - Vous devriez voir un retour de l'API dans la partie inférieure de la fenêtre avec les détails de l'article créé.
@@ -64,7 +61,7 @@ Postman est un outil qui permet de tester des requêtes HTTP. Vous pouvez créer
 3. **Supprimer un Article**
    - Trouvez l'ID de l'article que vous voulez supprimer (vous pouvez le trouver dans la réponse de l'étape précédente ou via votre interface d'administration Strapi).
    - Créez une nouvelle requête ou modifiez celle existante en sélectionnant "DELETE" comme méthode.
-   - Mettez à jour l'URL pour cibler l'article spécifique avec son ID : `http://localhost:1337/articles/{id}` (remplacez `{id}` par l'ID réel de l'article).
+   - Mettez à jour l'URL pour cibler l'article spécifique avec son ID : `http://localhost:1337/api/articles/{id}` (remplacez `{id}` par l'ID réel de l'article).
    - Cliquez sur "Send".
    - Si la suppression est réussie, l'API devrait renvoyer un statut de 200 et les détails de l'article supprimé. Vous pouvez vérifier cela en allant voir dans votre interface d'administration Strapi et vérifiant que l'article n'est plus là.
 
