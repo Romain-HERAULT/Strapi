@@ -75,3 +75,14 @@ Postman est un outil qui permet de tester des requêtes HTTP. Vous pouvez créer
 
 ---
 
+
+
+
+### Ajout d'un article via le JS :
+
+## Titre :
+Test 1 ajout d'un article
+
+## Contenu :
+Ajout d'un article via js sans id. Seuls le titre et le contenu sont renseignés
+
